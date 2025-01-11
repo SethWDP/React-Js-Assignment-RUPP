@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import reportWebVitals from "./reportWebVitals";
 import logo from "../../assets/booklogo.png";
-import HomePage from "../../Page/Home/HomePage";
 
 // import "./Mainlayout.css";
 const Mainlayout = () => {
@@ -13,9 +12,9 @@ const Mainlayout = () => {
     <>
       <header className="navbar navbar-expand-lg navbar-light bg-white">
         <nav className="container ">
-          <a href="#" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo-img" />
-          </a>
+          </Link>
 
           {/* Toggle button for mobile */}
           <button
