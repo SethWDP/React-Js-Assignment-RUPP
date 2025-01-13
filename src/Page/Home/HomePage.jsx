@@ -2,6 +2,7 @@ import React from "react";
 import "../../Style/HomePage.css";
 import Marquee from "../../Components/Marquee";
 import BestsellerCard from "../Category/BestsellerCard";
+import gbook from "../../assets/Gbooks.png";
 const HomePage = () => {
   return (
     <>
@@ -27,6 +28,12 @@ const HomePage = () => {
             <div className="bookcard">
               <BestsellerCard />
             </div>
+          </div>
+        </section>
+
+        <section className="container adv-book">
+          <div className="adv-imgbook">
+            <img src={gbook} alt="book" />
           </div>
         </section>
       </section>
