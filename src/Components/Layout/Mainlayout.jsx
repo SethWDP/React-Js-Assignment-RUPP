@@ -55,7 +55,7 @@ const Mainlayout = () => {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/novels">
-                      រឿងប្រឡោមលោក
+                      សៀវភៅទូទៅ
                     </Link>
                   </li>
                   <li>
@@ -65,7 +65,7 @@ const Mainlayout = () => {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/math">
-                      គណិតវិទ្យា
+                      សៀវភៅ ប្រឡោមលោក
                     </Link>
                   </li>
                   <li>

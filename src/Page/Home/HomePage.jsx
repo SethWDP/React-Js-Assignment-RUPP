@@ -1,25 +1,35 @@
 import React from "react";
 import "../../Style/HomePage.css";
-import Gbook from "../../assets/Gbooks.png";
+import Marquee from "../../Components/Marquee";
+import BestsellerCard from "../Category/BestsellerCard";
 const HomePage = () => {
   return (
     <>
       <section className="home">
-        <header className="header d-flex">
-          <div className="txt-header">
-            <h1 className="text-white">Get All The Books You Need!</h1>
-            <p className="text-white">
+        <header className="header">
+          <div className=" txt-header">
+            <h1>Get All The Books You Need!</h1>
+            <p>
               Your literary journey starts here at this ShopBook. Discover, shop
               and get book delivered fast-all in one place.
             </p>
-            <button className="btn btn-dark w-25 ">Explore-Now</button>
-          </div>
-          <div className="img-book w-50 ">
-            <img src={Gbook} alt="" />
+            <button>Explore Now</button>
           </div>
         </header>
+
+        <section className="marquee">
+          <Marquee />
+        </section>
+
+        <section className="container bestseller">
+          <h2 className="">Bestsellers</h2>
+          <div className="row">
+            <div className="bookcard">
+              <BestsellerCard />
+            </div>
+          </div>
+        </section>
       </section>
-      ;
     </>
   );
 };

@@ -4,42 +4,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --txtcolor1: #040a44;
+  --txtcolor2: #83c7f1;
+}
 .home {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: whitesmoke;
 }
+/* Header */
 .header {
   margin-top: 0.5%;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-color: red;
-  background-image: url("../assets/bookshelf.jpg");
+  background-image: url("https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg?t=st=1736739147~exp=1736742747~hmac=49fe03797acb370fd2cbf08806fefaa8d70045c814fbee3f9053f095e0c8ca6d&w=1380");
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   background-size: cover;
   position: relative;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: end;
 }
 .header .txt-header {
-  filter: brightness(100%);
-  width: 50%;
-  height: 100%;
-  padding: 5rem 5rem;
   /* background-color: red; */
+  height: 100%;
+  width: 60%;
+  padding: 6rem 15rem;
 }
+
 .header .txt-header h1 {
   font-family: "Anton", serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
-  font-style: normal;
+  color: var(--txtcolor1);
   width: 35rem;
 }
 .header .txt-header p {
@@ -47,8 +46,68 @@
   font-family: sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  font-style: normal;
+  color: var(--txtcolor1);
 }
-.header .img-book {
-  filter: brightness(100%);
+.header .txt-header button {
+  background-color: var(--txtcolor1);
+  width: 10rem;
+  height: 3.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.header .txt-header button:hover::before {
+  width: 105%;
+}
+.header .txt-header button:hover {
+  background-color: #43699b;
+}
+/*Section Marquee */
+marquee {
+  background-color: #f0f0f0;
+  margin-top: 1%;
+}
+/* Section Best Seller */
+.bestseller {
+  width: 100%;
+  height: 50vh;
+}
+.bestseller h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  .header .txt-header {
+    filter: brightness(100%);
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .header .txt-header h1 {
+    font-size: 5rem;
+    color: white;
+    width: 22rem;
+    /* background-color: red; */
+  }
+  .header .txt-header p {
+    font-size: 1.5rem;
+    width: 22rem;
+    color: whitesmoke;
+  }
 }
