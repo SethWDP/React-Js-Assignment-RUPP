@@ -106,7 +106,9 @@ const Mainlayout = () => {
         </nav>
       </header>
       <Outlet />
-      <footer>footer</footer>
+
+      {/* This is for footer design */}
+      <footer>footer design</footer>
     </>
   );
 };
