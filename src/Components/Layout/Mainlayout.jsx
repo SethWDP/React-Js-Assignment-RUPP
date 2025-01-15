@@ -54,23 +54,38 @@ const Mainlayout = () => {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/novels">
-                      សៀវភៅទូទៅ
+                    <Link className="dropdown-item" to="/ភាពជាអ្នកដឹកនាំ">
+                      ភាពជាអ្នកដឹកនាំ
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/programming">
-                      Programming Language
+                    <Link className="dropdown-item" to="/ជំនួញនិងទុរកិច្ច">
+                      ជំនួញ និង ទុរកិច្ច
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/math">
-                      សៀវភៅ ប្រឡោមលោក
+                    <Link className="dropdown-item" to="/ទស្សនវិជ្ជា">
+                      ទស្សនវិជ្ជា
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/khmer">
-                      ភាសាខ្មែរ
+                    <Link className="dropdown-item" to="/ចិត្តវិទ្យា">
+                      ចិត្តវិទ្យា
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/ប្រវត្តិសាស្ត្រ">
+                      ប្រវត្តិសាស្ត្រ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/ប្រលោមលោក">
+                      ប្រលោមលោក
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/Programming Language">
+                    Programming Language
                     </Link>
                   </li>
                 </ul>
@@ -102,11 +117,36 @@ const Mainlayout = () => {
                 <span className="cart-badge">0</span>
               </a>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
           </div>
         </nav>
       </header>
       <Outlet />
-
       {/* This is for footer design */}
       <footer>footer design</footer>
     </>

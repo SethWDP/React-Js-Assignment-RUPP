@@ -1,0 +1,99 @@
+/* General Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Book List Grid */
+.list_Book {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Book Card Styling */
+.book_card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.book_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.book_image {
+  width: 100%;
+  height: auto;
+}
+
+/* Title and Price Styling */
+.book_title {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.book_price {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart Button Styling */
+.add_cart_btn {
+  background-color:blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto; /* Ensures button stays at the bottom */
+}
+
+.add_cart_btn:hover {
+  background-color:black;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .book_title {
+    font-size: 14px;
+  }
+
+  .book_price {
+    font-size: 12px;
+  }
+
+  .add_cart_btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

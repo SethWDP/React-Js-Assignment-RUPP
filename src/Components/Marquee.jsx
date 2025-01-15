@@ -32,7 +32,7 @@ const Marquees = () => {
     },
     mainbox: {
       display: "flex",
-      gap: "5rem",
+      gap: "4rem",
     },
     img: {
       width: "100%",
@@ -42,10 +42,10 @@ const Marquees = () => {
   };
 
   return (
-    <div className="mt-3">
+    <div className="mt-5">
       <Marquee pauseOnHover direction="right">
         <div style={styleM.mainbox}>
-          <div className="box" style={styleM.box}>
+          <div className="box ms-5" style={styleM.box}>
             <img style={styleM.img} src={p1} alt="bookimg" />
           </div>
           <div className="box" style={styleM.box}>
@@ -73,7 +73,7 @@ const Marquees = () => {
       </Marquee>
       <Marquee className="mt-3" pauseOnHover direction="left">
         <div style={styleM.mainbox}>
-          <div className="box" style={styleM.box}>
+          <div className="box ms-5" style={styleM.box}>
             <img style={styleM.img} src={p9} alt="bookimg" />
           </div>
           <div className="box" style={styleM.box}>
