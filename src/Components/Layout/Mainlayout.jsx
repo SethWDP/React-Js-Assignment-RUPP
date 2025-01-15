@@ -116,33 +116,7 @@ const Mainlayout = () => {
                 </svg>
                 <span className="cart-badge">0</span>
               </a>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+            </div> 
           </div>
         </nav>
       </header>
