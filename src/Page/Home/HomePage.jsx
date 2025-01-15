@@ -3,6 +3,8 @@ import "../../Style/HomePage.css";
 import Marquee from "../../Components/Marquee";
 import BestsellerCard from "../Category/BestsellerCard";
 import gbook from "../../assets/Gbooks.png";
+import ServiceFeatures from "../../Components/Home-component/ServiceFeatures";
+import PeopleSayCard from "../../Components/Home-component/PeopleSayCard";
 const HomePage = () => {
   return (
     <>
@@ -52,6 +54,16 @@ const HomePage = () => {
               </p>
               <button>Explore Now</button>
             </div>
+          </div>
+        </section>
+
+        <section className="container">
+          <ServiceFeatures />
+        </section>
+        <section className="container peoplesay">
+          <h2>What people have to say</h2>
+          <div>
+            <PeopleSayCard />
           </div>
         </section>
       </section>
