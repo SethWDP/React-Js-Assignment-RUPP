@@ -32,8 +32,26 @@ const HomePage = () => {
         </section>
 
         <section className="container adv-book">
-          <div className="adv-imgbook">
-            <img src={gbook} alt="book" />
+          <div className="row d-flex ">
+            <div className="col-md-6 adv-imgbook">
+              <img src={gbook} alt="book" />
+            </div>
+            <div className="col-md-6 txt-book">
+              <h2 className="fw-bold">Advantage of Reading Book</h2>
+              <p className="mt-4">
+                Reading books enriches the mind, boosts creativity, and enhances
+                knowledge. It improves focus, vocabulary, and critical thinking
+                skills while reducing stress.
+              </p>
+              <p>
+                Books transport readers to new worlds, inspire ideas, and
+                provide valuable life lessons. Whether for entertainment,
+                education, or self-growth, reading fosters empathy, broadens
+                perspectives, and nurtures a lifelong love for learning and
+                personal development.
+              </p>
+              <button>Explore Now</button>
+            </div>
           </div>
         </section>
       </section>
