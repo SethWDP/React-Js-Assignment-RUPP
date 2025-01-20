@@ -10,6 +10,7 @@ import logo from "../../assets/booklogo.png";
 const Mainlayout = () => {
   return (
     <>
+      {/* Header section */}
       <header className="navbar navbar-expand-lg navbar-light bg-white">
         <nav className="container ">
           <Link to="/" className="navbar-brand">
@@ -74,7 +75,7 @@ const Mainlayout = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/ប្រវត្តិសាស្ត្រ">
+                    <Link className="dropdown-item" to="/historybook">
                       ប្រវត្តិសាស្ត្រ
                     </Link>
                   </li>
@@ -84,8 +85,8 @@ const Mainlayout = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/Programming Language">
-                    Programming Language
+                    <Link className="dropdown-item" to="/programmingBook">
+                      Programming Language
                     </Link>
                   </li>
                 </ul>
@@ -116,13 +117,90 @@ const Mainlayout = () => {
                 </svg>
                 <span className="cart-badge">0</span>
               </a>
-            </div> 
+            </div>
           </div>
         </nav>
       </header>
       <Outlet />
       {/* This is for footer design */}
-      <footer>footer design</footer>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-section">
+            {/* <h4>Colorlib</h4> */}
+            <div class="logo">
+              <Link to="/" className="navbar-brand">
+                <img src={logo} alt="logo-img" />
+              </Link>
+            </div>
+
+            <p>Get All The Books You Need!</p>
+          </div>
+
+          <div className="footer-section">
+            <h4>Categories</h4>
+            <ul>
+              <li>
+                <a href="#">Buy & Sell</a>
+              </li>
+              <li>
+                <a href="#">Merchant</a>
+              </li>
+              <li>
+                <a href="#">Giving Back</a>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/programmingBook">
+                  Programming Language
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h4>Tag Cloud</h4>
+            <div className="tags">
+              <a href="#">Dish</a>
+              <a href="#">Menu</a>
+              <a href="#">Food</a>
+              <a href="#">Sweet</a>
+              <a href="#">Tasty</a>
+              <a href="#">Delicious</a>
+              <a href="#">Desserts</a>
+              <a href="#">Drinks</a>
+            </div>
+          </div>
+
+          <div className="footer-section">
+            <h4>Subscribe</h4>
+            <form className="subscribe-form">
+              <input type="email" placeholder="Enter email address" />
+              <button type="submit">→</button>
+            </form>
+            <div className="social-icons">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>
+            Copyright ©2025. All rights reserved | This template is made with ♥️
+            by Colorlib.com
+          </p>
+          <div className="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Compliances</a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

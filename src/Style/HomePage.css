@@ -19,7 +19,7 @@
   width: 100%;
   height: 80vh;
   background-color: red;
-  background-image: url("https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg?t=st=1736739147~exp=1736742747~hmac=49fe03797acb370fd2cbf08806fefaa8d70045c814fbee3f9053f095e0c8ca6d&w=1380");
+  background-image: url("./imgHeader2.jpg");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
@@ -71,7 +71,7 @@ marquee {
 /* Section Best Seller */
 .bestseller {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
 }
 .bestseller h2 {
   font-family: sans-serif;
@@ -85,7 +85,7 @@ marquee {
 .txt-book {
   width: 50%;
   height: 100%;
-  background-color: #c3e8ff;
+  background-color: #d1ebfb;
   padding: 30px 0px;
   border-radius: 10px 0 0 10px;
 }

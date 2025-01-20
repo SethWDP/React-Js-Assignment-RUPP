@@ -1,43 +1,48 @@
 import React from "react";
+// import "./Bookcard.css";
 import Bestseller from "./Bestseller";
-import img1 from "../../assets/book1.jpg";
-import img2 from "../../assets/book2.jpg";
-import img3 from "../../assets/book3.jpg";
-import img4 from "../../assets/book4.jpg";
+import img5 from "../../assets/book11.jpg";
+import img2 from "../../assets/book5.jpg";
+import img3 from "../../assets/b4.jpg";
+import img4 from "../../assets/b15.jpg";
 const BestsellerCard = () => {
   const bookdata = [
     {
       id: 1,
-      img: img1,
-      name: "Book",
-      des: "Book description",
+      img: img5,
+      name: "Influence ឥទ្ធិពល",
+      des: "កែរសម្រួលដោយ លោក​ ញូង រ៉ាយ៉ា",
+      price: "6$",
     },
     {
       id: 2,
       img: img2,
-      name: "Book 2",
-      des: "Book 2 description",
+      name: "ការគិត​ Thinking",
+      des: "កែរសម្រួលដោយ លោក ពិសិដ្ឋ",
+      price: "7$",
     },
     {
       id: 3,
       img: img3,
-      name: "Book 3",
-      des: "Book 3 description",
+      name: "មូលដ្ឋានគ្រិះនៃអាជីវកម្ម",
+      des: "​កែរសម្រួលដោយ លោក  ឈុំ សីហា",
+      price: "7$",
     },
     {
       id: 4,
       img: img4,
-      name: "Book 4",
-      des: "Book 4 description",
+      name: "គន្លិះសម្ងាត់នៃភាពជោគជ័យ",
+      des: "និពន្ដដោយលោក Alan Pease",
+      price: "5$",
     },
   ];
   return (
     <div className="d-flex justify-content-around">
       {bookdata.map((book) => {
-        const { id, img, name, des } = book;
+        const { id, img, name, des, price } = book;
         return (
           <div key={id}>
-            <Bestseller img={img} name={name} description={des} />
+            <Bestseller img={img} name={name} description={des} price={price} />
           </div>
         );
       })}

@@ -8,6 +8,7 @@ import ContactPage from "./Page/Contact/ContactPage";
 import Mainlayout from "./Components/Layout/Mainlayout";
 import BookLan from "./Page/Category/BCodeLan/BookLan";
 import BookLanCard from "./Page/Category/BCodeLan/BookLanCard";
+import History from "./Page/Category/CatecgoryBook/History";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/category" element={<BookMenuPage />} />
           <Route path="/programmingBook" element={<BookLanCard />} />
+          <Route path="/historybook" element={<History />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Route>
