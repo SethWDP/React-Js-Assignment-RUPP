@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Style/Category.css";
+import BookCard from "./BookCard";
 import ps1 from "../assets/ps1.jpg";
 import ps2 from "../assets/ps2.jpg";
 import ps3 from "../assets/ps3.jpg";
@@ -62,23 +63,20 @@ const books = [
 ];
 
 const BookPsychologyid = () => {
-  return (
-    <div className="container">
-      <h1>Book Collection</h1>
-      <div className="list_Book">
-        {books.map((book) => (
-          <div key={book.id} className="book_card">
-            <img src={book.img} alt={book.title} className="book_image" />
-            <h3 className="book_title">{book.title}</h3>
-            <p className="book_price">{book.price}</p>
-            <button className="add_cart_btn" onClick={() => addToCart(book.title)}>
-              Add to Cart
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  const addToCart = (title) => {
+     alert(`${title} has been added to the cart!`);
+   };
+ 
+   return (
+     <div className="container">
+       <h1>Book Collection</h1>
+       <div className="list_Book">
+         {books.map((book) => (
+           <BookCard key={book.id} book={book} addToCart={addToCart} />
+         ))}
+       </div>
+     </div>
+   );
 };
 
 export default BookPsychologyid;
