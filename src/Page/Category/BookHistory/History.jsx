@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Style/Category.css";
-import BookCard from "./BookCard.jsx";
+import BookCard from "../BookBusiness/BusinessCard.jsx";
 import h1 from "../assets/h1.jpg";
 import h2 from "../assets/h2.jpg";
 import h3 from "../assets/h3.jpg";
