@@ -1,4 +1,7 @@
 import React from "react";
+import {faFacebook,faLinkedin,faInstagram,faTwitter,faTiktok,faYoutube,faDiscord} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import { Outlet, Link } from "react-router-dom";
 import "../../Style/Mainlayout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -139,34 +142,31 @@ const Mainlayout = () => {
           <div className="footer-section">
             <h4>Categories</h4>
             <ul>
-              <li>
-                <a href="#">Buy & Sell</a>
-              </li>
-              <li>
-                <a href="#">Merchant</a>
-              </li>
-              <li>
-                <a href="#">Giving Back</a>
-              </li>
-              <li>
-                <Link className="dropdown-item" to="/programmingBook">
-                  Programming Language
-                </Link>
-              </li>
-            </ul>
+              <li><a href="#">ភាពជាអ្នកដឹកនាំ</a></li>
+              <li><a href="#">ជំនួញ​និងធុរកិច្ច</a></li>
+              <li><a href="#">ទស្សនវិទ្យា</a></li>
+              <li><a href="#">ចិត្តវិទ្យា</a></li>
+              <li><a href="#">ប្រវត្តិសាស្រ្ត</a></li>
+              <li><a href="#">ប្រឡោមលោក</a></li>
+              <li><a href="#">Programming Languge</a></li>
+          </ul>
           </div>
 
           <div className="footer-section">
             <h4>Tag Cloud</h4>
             <div className="tags">
-              <a href="#">Dish</a>
-              <a href="#">Menu</a>
-              <a href="#">Food</a>
-              <a href="#">Sweet</a>
-              <a href="#">Tasty</a>
-              <a href="#">Delicious</a>
-              <a href="#">Desserts</a>
-              <a href="#">Drinks</a>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Category</a>
+              <a href="#">Service</a>
+              <a href="#">Contact</a>  
+              <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href=""><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href=""><FontAwesomeIcon icon={faTiktok} /></a>
+              <a href=""><FontAwesomeIcon icon={faYoutube} /></a>
+              <a href=""><FontAwesomeIcon icon={faDiscord} /></a>       
             </div>
           </div>
 
