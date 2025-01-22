@@ -1,13 +1,12 @@
 import React from "react";
-import "../../../Styles/Category.css";
 
-const BookCard = ({ book, addToCart }) => {
+const BookCard = ({ img, title, price }) => {
   return (
     <div className="book_card">
-      <img src={book.img} alt={book.title} className="book_image" />
-      <h3 className="book_title">{book.title}</h3>
-      <p className="book_price">{book.price}</p>
-      <button className="add_cart_btn" onClick={() => addToCart(book.title)}>
+      <img src={img} alt="imgBook" className="book_image" />
+      <h3 className="book_title">{title}</h3>
+      <p className="book_price">{price}</p>
+      <button className="add_cart_btn" onClick={() => addToCart(title)}>
         Add to Cart
       </button>
     </div>

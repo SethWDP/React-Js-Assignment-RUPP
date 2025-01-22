@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../Styles/Category.css";
-import BookCard from "./BusinessCard.jsx";
+import "../../../Style/Category.css";
+import BusinessCard from "./BusinessCard";
 import b1 from "../../../assets/b1.jpg";
 import b2 from "../../../assets/b2.jpg";
 import b3 from "../../../assets/b3.jpg";
@@ -77,11 +77,16 @@ const BookBusinessid = () => {
 
   return (
     <div className="container">
-      <h1>Business</h1>
+      <h1>Business / ជំនួញនិងទុរកិច្ច</h1>
       <div className="list_Book">
-        {books.map((book) => (
-          <BookCard key={book.id} book={book} addToCart={addToCart} />
-        ))}
+        {books.map((book) => {
+          const { id, title, price, img } = book;
+          return (
+            <div key={id}>
+              <BusinessCard img={img} title={title} price={price} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
