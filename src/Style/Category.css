@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 /* General Container Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,7 +13,7 @@
 
 h1 {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Koulen", serif;
   color: #333;
   margin-bottom: 20px;
 }
@@ -63,7 +69,7 @@ h1 {
 
 /* Add to Cart Button Styling */
 .add_cart_btn {
-  background-color:blueviolet;
+  background-color: #83c7f1;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -75,7 +81,7 @@ h1 {
 }
 
 .add_cart_btn:hover {
-  background-color:black;
+  background-color: #040a44;
 }
 
 /* Mobile-Friendly Adjustments */

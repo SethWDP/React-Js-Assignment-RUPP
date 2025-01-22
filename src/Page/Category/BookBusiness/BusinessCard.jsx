@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Style/Category.css";
+import "../../../Styles/Category.css";
 
 const BookCard = ({ book, addToCart }) => {
   return (
