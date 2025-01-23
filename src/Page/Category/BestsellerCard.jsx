@@ -2,7 +2,7 @@ import React from "react";
 // import "./Bookcard.css";
 import Bestseller from "./Bestseller";
 import img5 from "../../assets/book11.jpg";
-import img2 from "../../assets/book5.jpg";
+import img2 from "../../assets/book12.jpg";
 import img3 from "../../assets/b4.jpg";
 import img4 from "../../assets/b15.jpg";
 const BestsellerCard = () => {
