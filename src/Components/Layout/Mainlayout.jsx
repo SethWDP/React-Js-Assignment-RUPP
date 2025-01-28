@@ -3,7 +3,6 @@ import {
   faFacebook,
   faLinkedin,
   faInstagram,
-  faTwitter,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,15 +11,13 @@ import { Outlet, Link } from "react-router-dom";
 import "../../Style/Mainlayout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-// import reportWebVitals from "./reportWebVitals";
 import logo from "../../assets/booklogo.png";
 
-// import "./Mainlayout.css";
 const Mainlayout = () => {
   return (
     <>
       {/* Header section */}
-      <header className="navbar navbar-expand-lg navbar-light bg-white">
+      <header className="navbar navbar-expand-lg ">
         <nav className="container ">
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo-img" />
@@ -182,19 +179,17 @@ const Mainlayout = () => {
               <a href="/service">Service</a>
               <a href="/contact">Contact</a>
               <a href="">
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon className="fb-icon" icon={faFacebook} />
               </a>
               <a href="">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon className="lnkin-icon" icon={faLinkedin} />
               </a>
               <a href="">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon className="ig-icon" icon={faInstagram} />
               </a>
+
               <a href="">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="">
-                <FontAwesomeIcon icon={faTiktok} />
+                <FontAwesomeIcon className="tt-icon" icon={faTiktok} />
               </a>
             </div>
           </div>
