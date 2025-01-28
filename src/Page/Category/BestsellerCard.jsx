@@ -1,11 +1,15 @@
 import React from "react";
+<<<<<<< HEAD
 import "../../Style/Category.css";
 // import "./Bookcard.css";
+=======
+>>>>>>> 0f9532a51dfd746753dcaa0e9d424ca8463d2159
 import Bestseller from "./Bestseller";
 import img5 from "../../assets/book11.jpg";
 import img2 from "../../assets/book12.jpg";
 import img3 from "../../assets/b4.jpg";
 import img4 from "../../assets/b15.jpg";
+
 const BestsellerCard = () => {
   const bookdata = [
     {
@@ -37,7 +41,9 @@ const BestsellerCard = () => {
       price: "5$",
     },
   ];
+
   return (
+<<<<<<< HEAD
     <>
       <div className="container">
         <div className="d-flex justify-content-around list_Book">
@@ -57,6 +63,19 @@ const BestsellerCard = () => {
         </div>
       </div>
     </>
+=======
+    <div className="bestseller-container">
+      {bookdata.map((book) => (
+        <Bestseller
+          key={book.id}
+          img={book.img}
+          name={book.name}
+          description={book.des}
+          price={book.price}
+        />
+      ))}
+    </div>
+>>>>>>> 0f9532a51dfd746753dcaa0e9d424ca8463d2159
   );
 };
 

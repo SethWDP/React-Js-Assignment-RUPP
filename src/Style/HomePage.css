@@ -127,11 +127,6 @@ marquee {
 .txt-book button:hover {
   background-color: var(--clor1);
 }
-/* People say section */
-.peoplesay {
-  width: 100%;
-  height: auto;
-}
 @media screen and (max-width: 768px) {
   .header::before {
     content: "";
@@ -166,7 +161,7 @@ marquee {
     color: whitesmoke;
   }
   .bestseller {
-    height: auto;
+    overflow: hidden;
   }
   /* advantage of book section */
   .adv-book {
