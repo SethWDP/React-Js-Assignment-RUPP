@@ -122,6 +122,11 @@ marquee {
 .txt-book button:hover {
   background-color: var(--clor1);
 }
+@media screen and (max-width: 992px) {
+  .bestseller{
+    height: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .header::before {
     content: "";
@@ -156,6 +161,7 @@ marquee {
     color: whitesmoke;
   }
   .bestseller {
+    height: auto;
     overflow: hidden;
   }
   .adv-imgbook {

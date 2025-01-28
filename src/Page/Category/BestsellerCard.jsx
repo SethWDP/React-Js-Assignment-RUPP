@@ -1,10 +1,10 @@
 import React from "react";
-// import "./Bookcard.css";
 import Bestseller from "./Bestseller";
 import img5 from "../../assets/book11.jpg";
 import img2 from "../../assets/book12.jpg";
 import img3 from "../../assets/b4.jpg";
 import img4 from "../../assets/b15.jpg";
+
 const BestsellerCard = () => {
   const bookdata = [
     {
@@ -36,16 +36,18 @@ const BestsellerCard = () => {
       price: "5$",
     },
   ];
+
   return (
-    <div className="d-flex justify-content-around">
-      {bookdata.map((book) => {
-        const { id, img, name, des, price } = book;
-        return (
-          <div key={id}>
-            <Bestseller img={img} name={name} description={des} price={price} />
-          </div>
-        );
-      })}
+    <div className="bestseller-container">
+      {bookdata.map((book) => (
+        <Bestseller
+          key={book.id}
+          img={book.img}
+          name={book.name}
+          description={book.des}
+          price={book.price}
+        />
+      ))}
     </div>
   );
 };
