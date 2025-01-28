@@ -5,7 +5,7 @@ const PeopleSayCard = () => {
   const People = [
     {
       id: 1,
-      img: "https://img.a.transfermarkt.technology/portrait/big/8198-1694609670.jpg?lm=1",
+      img: "https://hips.hearstapps.com/hmg-prod/images/cristiano-ronaldo-of-portugal-reacts-as-he-looks-on-during-news-photo-1725633476.jpg?crop=0.666xw:1.00xh;0.180xw,0&resize=640:*",
       name: "Ronaldo",
       desc: "I love how easy it is to browse and purchase books. The user-friendly design and excellent recommendations make it a go-to for book lovers",
     },

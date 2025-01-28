@@ -36,3 +36,6 @@
   height: 8rem;
   clip-path: circle();
 }
+.desc-say {
+  width: 80%;
+}
