@@ -1,6 +1,6 @@
 import React from "react";
 // import "./Bookcard.css";
-import "../../Style/Category.css";
+// import "../../Style/Category.css";
 const Bestseller = ({ img, name, description, price }) => {
   return (
     // <div

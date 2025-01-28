@@ -1,4 +1,5 @@
 import React from "react";
+import "../../Style/Category.css";
 // import "./Bookcard.css";
 import Bestseller from "./Bestseller";
 import img5 from "../../assets/book11.jpg";
@@ -37,16 +38,25 @@ const BestsellerCard = () => {
     },
   ];
   return (
-    <div className="d-flex justify-content-around">
-      {bookdata.map((book) => {
-        const { id, img, name, des, price } = book;
-        return (
-          <div key={id}>
-            <Bestseller img={img} name={name} description={des} price={price} />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <div className="container">
+        <div className="d-flex justify-content-around list_Book">
+          {bookdata.map((book) => {
+            const { id, img, name, des, price } = book;
+            return (
+              <div key={id}>
+                <Bestseller
+                  img={img}
+                  name={name}
+                  description={des}
+                  price={price}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 };
 

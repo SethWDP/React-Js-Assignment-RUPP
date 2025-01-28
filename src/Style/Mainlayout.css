@@ -17,20 +17,17 @@ body {
   overflow-x: hidden; /* Avoid horizontal overflow issues */
 }
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-header .container {
+/* header .container {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
+} */
 .navbar-brand {
   width: 90px;
-  height: 50px;
+  height: 90px;
 }
 .navbar-brand img {
   width: 100%;
@@ -107,10 +104,10 @@ header .container {
 }
 
 .footer-section a:hover {
-  color: var(--clor5);
+  color: #22577a;
 }
 .footer-section a .fb-icon:hover {
-  color: #3b5998;
+  color: #0856ff;
 }
 .footer-section a .lnkin-icon:hover {
   color: #5b8ffd;
@@ -130,7 +127,9 @@ header .container {
   border-radius: 5px;
   text-decoration: none;
 }
-
+.tags .lnk-icon {
+  background-color: #3b5998;
+}
 .subscribe-form {
   display: flex;
   gap: 10px;

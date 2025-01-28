@@ -178,19 +178,21 @@ const Mainlayout = () => {
               <a href="/category">Category</a>
               <a href="/service">Service</a>
               <a href="/contact">Contact</a>
-              <a href="">
-                <FontAwesomeIcon className="fb-icon" icon={faFacebook} />
-              </a>
-              <a href="">
-                <FontAwesomeIcon className="lnkin-icon" icon={faLinkedin} />
-              </a>
-              <a href="">
-                <FontAwesomeIcon className="ig-icon" icon={faInstagram} />
-              </a>
+              <span>
+                <a href="" className="lnk-icon">
+                  <FontAwesomeIcon className="fb-icon" icon={faFacebook} />
+                </a>
+                <a href="" className="lnk-icon">
+                  <FontAwesomeIcon className="lnkin-icon" icon={faLinkedin} />
+                </a>
+                <a href="" className="lnk-icon">
+                  <FontAwesomeIcon className="ig-icon" icon={faInstagram} />
+                </a>
 
-              <a href="">
-                <FontAwesomeIcon className="tt-icon" icon={faTiktok} />
-              </a>
+                <a href="" className="lnk-icon">
+                  <FontAwesomeIcon className="tt-icon" icon={faTiktok} />
+                </a>
+              </span>
             </div>
           </div>
 

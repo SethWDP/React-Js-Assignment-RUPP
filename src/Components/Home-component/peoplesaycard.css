@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --txtcolor1: #040a44;
+  --txtcolor2: #83c7f1;
+  --clor1: #22577a;
+  --clor2: #38a3a5;
+  --clor3: #57cc99;
+  --clor4: #80ed99;
+  --clor5: #c7f9cc;
+  --clor6: #eaeaea;
+}
+.people-say-card {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  place-items: center;
+}
+.say-card {
+  width: 25rem;
+  height: 300px;
+  background-color: var(--clor6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.profile-say {
+  width: 8rem;
+  height: 8rem;
+  clip-path: circle();
+}

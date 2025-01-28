@@ -35,11 +35,10 @@
   /* background-color: red; */
   height: 100%;
   width: 60%;
-  padding: 6rem 15rem;
+  padding: 10rem 14rem;
 }
 
 .header .txt-header h1 {
-  background-color: red;
   font-family: "Anton", serif;
   font-size: 5rem;
   font-weight: 400;
@@ -128,6 +127,11 @@ marquee {
 .txt-book button:hover {
   background-color: var(--clor1);
 }
+/* People say section */
+.peoplesay {
+  width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 768px) {
   .header::before {
     content: "";
@@ -162,7 +166,7 @@ marquee {
     color: whitesmoke;
   }
   .bestseller {
-    overflow: hidden;
+    height: auto;
   }
   /* advantage of book section */
   .adv-book {
@@ -189,6 +193,6 @@ marquee {
 
   .adv-imgbook img {
     width: 30rem;
-    height: 30rem;
+    height: 25rem;
   }
 }

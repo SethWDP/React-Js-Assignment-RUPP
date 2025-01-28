@@ -62,7 +62,9 @@ const HomePage = () => {
         </section>
         <section className="container peoplesay">
           <h2>What people have to say</h2>
-          <div>{/* <PeopleSayCard /> */}</div>
+          <div>
+            <PeopleSayCard />
+          </div>
         </section>
       </section>
     </>
