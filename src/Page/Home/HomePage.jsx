@@ -34,8 +34,8 @@ const HomePage = () => {
         </section>
 
         <section className="container adv-book">
-          <div className="row d-flex ">
-            <div className="col-md-6 adv-imgbook">
+          <div className="row d-flex flex-wrap align-items-center">
+            <div className="col-md-6 adv-imgbook text-center">
               <img src={gbook} alt="book" />
             </div>
             <div className="col-md-6 txt-book">
