@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.book-life {
+  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.book-life .read,
+.seed {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.read .read-img {
+  width: 50%;
+  height: 100%;
+}
+.read .read-txt,
+.seed-txt {
+  width: 50%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.read .read-txt .fire-icon {
+  color: orangered;
+  font-size: 1.5rem;
+}
+.read .read-txt h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.read .read-txt p {
+  font-size: 1.5rem;
+  font-family: serif;
+  width: 80%;
+}
+
+.book-life .seed .seed-img {
+  width: 50%;
+  height: 100%;
+}
+.book-life .seed .seed-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.book-life .seed .seed-txt .seed-icon {
+  color: green;
+  font-size: 1.5rem;
+}
+.book-life .seed .seed-txt h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.book-life .seed .seed-txt p {
+  font-size: 1.5rem;
+  font-family: serif;
+  width: 90%;
+  text-align: right;
+}

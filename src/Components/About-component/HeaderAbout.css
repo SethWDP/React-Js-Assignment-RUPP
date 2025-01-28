@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-about {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-color: red;
+  background-image: url("https://www.thepublicdiscourse.com/wp-content/uploads/2023/09/BOOKS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #04051044; /* Adjust opacity to control darkness */
+  z-index: 1; /* Ensures the overlay is above the background */
+}
+.header-about h1 {
+  color: white;
+  font-size: 5rem;
+  position: relative;
+  z-index: 2; /* Ensures the text is above the overlay */
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
