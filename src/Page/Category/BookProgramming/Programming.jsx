@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../Style/Category.css";
-// import BookCard from "./BookCard.jsx";
 import ProgrammingCard from "./ProgrammingCard";
 import pro1 from "../../../assets/pro1.jpg";
 import pro2 from "../../../assets/pro2.jpg";

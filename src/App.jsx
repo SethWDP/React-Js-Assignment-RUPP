@@ -6,12 +6,13 @@ import BookMenuPage from "./Page/Category/BookMenupage";
 import ServicePage from "./Page/Service/ServicePage";
 import ContactPage from "./Page/Contact/ContactPage";
 import Mainlayout from "./Components/Layout/Mainlayout";
-// import BookLanCard from "./Page/Category/BCodeLan/BookLanCard";
-import History from "./Page/Category/CatecgoryBook/History";
+import BookLanCard from "./Page/Category/BookPsychology/Psychology";
+// import History from "./Page/Category/BookHistory/History";
 import Leadership from "./Page/Category/BookLeadership/Leadership";
 import Business from "./Page/Category/BookBusiness/Business";
 import Philosophy from "./Page/Category/BookPhilosophy/Philosophy";
 import Programming from "./Page/Category/BookProgramming/Programming";
+import Novel from "./Page/Category/BookNovel/Novel";
 function App() {
   return (
     <BrowserRouter>
@@ -24,7 +25,9 @@ function App() {
           <Route path="/ភាពជាអ្នកដឹកនាំ" element={<Leadership />} />
           <Route path="/ជំនួញនិងទុរកិច្ច" element={<Business />} />
           <Route path="/ទស្សនវិជ្ជា" element={<Philosophy />} />
-          <Route path="/historybook" element={<History />} />
+          <Route path="/ប្រវត្តិសាស្រ្ត" element={<History />} />
+          <Route path="/ប្រលោមលោក" element={<Novel />} />
+          <Route path="/ចិត្តវិទ្យា" element={<BookLanCard />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Route>

@@ -81,7 +81,7 @@ const Mainlayout = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/historybook">
+                    <Link className="dropdown-item" to="/ប្រវត្តិសាស្រ្ត">
                       ប្រវត្តិសាស្ត្រ
                     </Link>
                   </li>
@@ -155,13 +155,13 @@ const Mainlayout = () => {
                 <a href="/ទស្សនវិជ្ជា">ទស្សនវិទ្យា</a>
               </li>
               <li>
-                <a href="#">ចិត្តវិទ្យា</a>
+                <a href="/ចិត្តវិទ្យា">ចិត្តវិទ្យា</a>
               </li>
               <li>
-                <a href="#">ប្រវត្តិសាស្រ្ត</a>
+                <a href="/ប្រវត្តិសាស្រ្ត">ប្រវត្តិសាស្រ្ត</a>
               </li>
               <li>
-                <a href="#">ប្រឡោមលោក</a>
+                <a href="/ប្រលោមលោក">ប្រឡោមលោក</a>
               </li>
               <li>
                 <a href="/programmingBook">Programming Languge</a>
