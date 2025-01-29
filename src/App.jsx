@@ -7,7 +7,7 @@ import ServicePage from "./Page/Service/ServicePage";
 import ContactPage from "./Page/Contact/ContactPage";
 import Mainlayout from "./Components/Layout/Mainlayout";
 import BookLanCard from "./Page/Category/BookPsychology/Psychology";
-// import History from "./Page/Category/BookHistory/History";
+import History from "./Page/Category/BookHistory/History";
 import Leadership from "./Page/Category/BookLeadership/Leadership";
 import Business from "./Page/Category/BookBusiness/Business";
 import Philosophy from "./Page/Category/BookPhilosophy/Philosophy";

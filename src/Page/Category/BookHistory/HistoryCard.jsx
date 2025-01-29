@@ -1,6 +1,6 @@
 import React from "react";
-
-const BookCard = ({ img, title, price, addToCart }) => {
+import "../../../Style/Category.css";
+const HistoryCard = ({ img, title, price, addToCart }) => {
   return (
     <div className="book_card">
       <img src={img} alt="bookImg" className="book_image" />
@@ -13,4 +13,4 @@ const BookCard = ({ img, title, price, addToCart }) => {
   );
 };
 
-export default BookCard;
+export default HistoryCard;
