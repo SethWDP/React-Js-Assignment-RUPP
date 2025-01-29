@@ -1,4 +1,3 @@
-
 :root {
   --txtcolor1: #040a44;
   --txtcolor2: #83c7f1;
@@ -9,15 +8,14 @@
 /* General Styles */
 .bestseller-container {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
 .book_card {
-  width: 250px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -72,24 +70,17 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .bestseller-container {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-
   .book_card {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 100%;
   }
-
   .book_title {
     font-size: 1rem;
   }
-
   .book_price {
     font-size: 0.9rem;
   }
-
   .add_cart_btn {
     font-size: 12px;
     padding: 8px 12px;
@@ -97,19 +88,19 @@
 }
 
 @media (max-width: 480px) {
-  .book_card {
-    width: 100%;
-    padding: 10px;
+  .bestseller-container {
+    grid-template-columns: 1fr;
   }
-
+  .book_card {
+    width: 90%;
+    margin: 0 auto;
+  }
   .book_title {
     font-size: 0.9rem;
   }
-
   .book_price {
     font-size: 0.8rem;
   }
-
   .add_cart_btn {
     font-size: 11px;
     padding: 7px 10px;
