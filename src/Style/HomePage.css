@@ -75,7 +75,7 @@ marquee {
 /* Section Best Seller */
 .bestseller {
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
 }
 .bestseller h2 {
   font-family: sans-serif;
@@ -127,6 +127,12 @@ marquee {
 .txt-book button:hover {
   background-color: var(--clor1);
 }
+/* @media screen and (max-width: 768px) {
+  .bestseller{
+    height: auto;
+  }
+} */
+
 @media screen and (max-width: 768px) {
   .header::before {
     content: "";

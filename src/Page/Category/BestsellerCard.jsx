@@ -42,7 +42,7 @@ const BestsellerCard = () => {
   return (
     <>
       <div className="container">
-        <div className="d-flex justify-content-around list_Book">
+        <div className="list_Book">
           {bookdata.map((book) => {
             const { id, img, name, des, price } = book;
             return (
