@@ -16,8 +16,8 @@ import logo from "../../assets/booklogo.png";
 const Mainlayout = () => {
   return (
     <>
-      {/* Header section */}
-      <header className="navbar navbar-expand-lg ">
+      {/* Header section */} 
+      <header className="navbar navbar-expand-lg position-sticky bg-white z-3">
         <nav className="container ">
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo-img" />

@@ -58,7 +58,8 @@ h1 {
 /* Image Styling */
 .book_image {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: contain;
 }
 
 /* Title and Price Styling */

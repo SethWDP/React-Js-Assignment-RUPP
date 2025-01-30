@@ -9,7 +9,7 @@ import h4 from "../../../assets/h4.jpg";
 import h5 from "../../../assets/h5.jpg";
 import h6 from "../../../assets/h6.jpg";
 import h7 from "../../../assets/h7.jpg";
-// import h8 from "../../../assets/h8.jpg";
+import h8 from "../../../assets/h8.jpg";
 import h9 from "../../../assets/h9.jpg";
 import h10 from "../../../assets/h10.jpg";
 import h11 from "../../../assets/h11.jpg";
@@ -57,7 +57,7 @@ const History = () => {
       title: "សមត្ថភាពដែលត្រូវហ្វឹកហាត់មុនអាយុ៣៥ឆ្នាំ",
       price: "32,000.00៛",
     },
-    // { id: 8, img: h8, title: "ពិភពលោកដែលខ្ញុំមើលឃើញ", price: "32,000.00៛" },
+    { id: 8, img: h8, title: "ពិភពលោកដែលខ្ញុំមើលឃើញ", price: "32,000.00៛" },
     { id: 9, img: h9, title: "យុទ្ធសាស្ត្រយកឈ្នះយក្ស", price: "32,000.00៛" },
     {
       id: 10,
@@ -102,19 +102,32 @@ const History = () => {
     },
   ];
   return (
-    <div className="container">
-      <h1>Book Collection/ប្រវត្តិសាស្រ្ត</h1>
-      <div class name="list_Book">
-        {books.map((book) => {
-          const { id, img, title, price } = book;
-          return (
-            <div key={id}>
-              <HistoryCard img={img} title={title} price={price} />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    // <div className="container">
+    //   <h1>Book Collection/ប្រវត្តិសាស្រ្ត</h1>
+    //   <div class name="list_Book">
+    //     {books.map((book) => {
+    //       const { id, img, title, price } = book;
+    //       return (
+    //         <div key={id}>
+    //           <HistoryCard img={img} title={title} price={price} />
+    //         </div>
+    //       );
+    //     })}
+    //   </div>
+    // </div>
+     <div className="container">
+     <h1>Book Collection / ប្រវត្តិសាស្រ្ត</h1>
+     <div className="list_Book">
+       {books.map((book) => {
+         const { id, img, title, price } = book;
+         return (
+           <div key={id}>
+             <HistoryCard img={img} title={title} price={price} />
+           </div>
+         );
+       })}
+     </div>
+   </div>
   );
 };
 
