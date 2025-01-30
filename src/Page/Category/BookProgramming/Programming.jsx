@@ -39,7 +39,7 @@ const BookProgrammingid = () => {
 
   return (
     <div className="container">
-      <h1>Progamming Book</h1>
+      <h1>Book Collection / Progamming</h1>
       <div className="list_Book">
         {books.map((book) => {
           const { id, title, price, img } = book;
