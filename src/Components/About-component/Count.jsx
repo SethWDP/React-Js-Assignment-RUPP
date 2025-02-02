@@ -20,7 +20,7 @@ const Count = () => {
       reader: 168,
     };
 
-    // Update numbers every 50 milliseconds
+    // Update numbers every 60 milliseconds
     const timer = setInterval(() => {
       setCounters((prevCounts) => ({
         // For each counter, either add 1 or stop at target
@@ -41,7 +41,7 @@ const Count = () => {
             ? prevCounts.reader + 3
             : targets.reader,
       }));
-    }, 40);
+    }, 60);
 
     // Stop the timer when all counters reach their targets
     if (
