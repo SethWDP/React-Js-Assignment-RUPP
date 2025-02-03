@@ -1,9 +1,20 @@
-// import React from "react";
+import React from "react";
+import "./contact.css";
+import ContactHeader from "../../Components/Contact-component/ContactHeader";
+import ContactList from "../../Components/Contact-component/ContactList";
+import FormContact from "../../Components/Contact-component/FormContact";
+const ContactPage = () => {
+  return (
+    <section className="contact-page">
+      <div className="contact-header">
+        <ContactHeader />
+      </div>
 
-// const ContactPage = () => {
-//   return <div>Contact form </div>;
-// };
+      <div className="container contact">
+        <ContactList />
+      </div>
 
+<<<<<<< HEAD
 // export default ContactPage;
 import React from 'react';  
 // import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';  
@@ -14,122 +25,29 @@ const ContactInfo = ({ icon, title, content }) => (
     <p>{content}</p>  
   </div>  
 );  
+=======
+      {/* ✅ Fixed Structure */}
+      <div className="container form">
+        <div className="map">
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4687.47382590369!2d104.88950057575052!3d11.568127044090646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519fe4077d69%3A0x20138e822e434660!2sRoyal%20University%20of%20Phnom%20Penh!5e1!3m2!1sen!2skh!4v1738551749271!5m2!1sen!2skh"
+            width="100%"
+            height="450"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+>>>>>>> 464ea5addaf68d2c945707e90274a2b606d2c154
 
-// Main Component  
-const ContactUs = () => {  
-  const mapContainerStyle = {  
-    height: '300px',  
-    width: '100%',  
-    marginBottom: '20px',  
-  };  
+        {/* ✅ Moved this inside the `.container.form` */}
+        <div className="contact-form">
+          <FormContact />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-  const center = {  
-    lat: 37.7749, // Replace with desired latitude  
-    lng: -122.4194, // Replace with desired longitude  
-  };  
-
-  // Info Data  
-  const contactData = [  
-    {  
-      icon: '', // Replace with your phone icon URL  
-      title: 'Phone',  
-      content: 'Toll-Free: 0803 - 080 - 3081\nFax: 0803 - 080 - 3082',  
-    },  
-    {  
-      icon: 'email_icon_url', // Replace with your email icon URL  
-      title: 'Email',  
-      content: 'mail@example.com\nsupport@example.com',  
-    },  
-    {  
-      icon: 'address_icon_url', // Replace with your address icon URL  
-      title: 'Address',  
-      content: 'No: 58 A, East Madison Street,\nBaltimore, MD, USA 4508',  
-    },  
-  ];  
-
-  return (  
-    <div style={styles.container}>  
-      <div style={styles.contactInfo}>  
-        {contactData.map((data, index) => (  
-          <ContactInfo  
-            key={index}  
-            icon={data.icon}  
-            title={data.title}  
-            content={data.content}  
-          />  
-        ))}  
-      </div>  
-      <div style={styles.map}>  
-        <LoadScript googleMapsApiKey="AIzaSyBQyGbghEIwzcJ5SJ3CNLBiFTiCXqSDmEg">  
-          <GoogleMap  
-            mapContainerStyle={mapContainerStyle}  
-            center={center}  
-            zoom={12}  
-          >  
-            <Marker position={center} />  
-          </GoogleMap>  
-        </LoadScript>  
-      </div>  
-      <div style={styles.contactForm}>  
-        <h5>Contact Form</h5>  
-        <form>  
-          <input type="text" placeholder="Name" required style={styles.input} />  
-          <input type="email" placeholder="Email" required style={styles.input} />  
-          <input type="tel" placeholder="Phone number" required style={styles.input} />  
-          <textarea placeholder="Comment" required style={styles.input} />  
-          <button type="submit" style={styles.button}>Send</button>  
-        </form>  
-      </div>  
-    </div>  
-  );  
-};  
-
-// Styles  
-const styles = {  
-  container: {  
-    display: 'flex',  
-    flexDirection: 'column',  
-    padding: '20px',  
-  },  
-  contactInfo: {  
-    display: 'flex',  
-    justifyContent: 'space-between',  
-    marginBottom: '20px',  
-  },  
-  infoBox: {     
-    border: '1px solid #ccc',  
-    padding: '10px',  
-    flex: '1',  
-    margin: '0 10px',  
-  },  
-  title: {  
-    fontWeight: 'bold',  
-  },  
-  icon: {  
-    width: '20px',  
-    height: '20px',  
-    marginRight: '10px',  
-  },  
-  map: {  
-    border: '1px solid #ccc',  
-    marginBottom: '20px',  
-  },  
-  contactForm: {  
-    border: '1px solid #ccc',  
-    padding: '20px',  
-  },  
-  input: {  
-    width: '100%',  
-    marginBottom: '10px',  
-    padding: '8px',  
-  },  
-  button: {  
-    backgroundColor: '#f76c6c',  
-    color: '#fff',  
-    padding: '10px 15px',  
-    border: 'none',  
-    cursor: 'pointer',  
-  },  
-};  
-
-export default ContactUs;
+export default ContactPage;
