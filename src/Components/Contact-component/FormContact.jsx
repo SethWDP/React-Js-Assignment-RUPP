@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./formContact.css";
+import "./formContact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 const FormContact = () => {
@@ -56,7 +56,7 @@ const FormContact = () => {
             required
           />
         </div>
-        <button type="submit">
+        <button className="btn-send" type="submit">
           Send <FontAwesomeIcon icon={faPaperPlane} />
         </button>
       </form>
