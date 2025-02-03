@@ -16,17 +16,31 @@
 }
 .form {
   width: 100%;
-  height: 60vh;
-  background-color: blue;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .form .contact-form {
   width: 50%;
   height: 100%;
-  background-color: yellowgreen;
 }
 .form .map {
-  background-color: yellow;
   width: 50%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form .contact-form {
+    width: 100%;
+    height: 50%;
+  }
+  .form .map {
+    width: 100%;
+    height: 50%;
+  }
 }
