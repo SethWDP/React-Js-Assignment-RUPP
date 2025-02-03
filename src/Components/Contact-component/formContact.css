@@ -46,7 +46,7 @@
 }
 
 /* Submit Button */
-button {
+.btn-send {
   width: 100%;
   padding: 10px;
   background: #22577a;
@@ -58,14 +58,20 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.btn-send:hover {
   background: #0056b3;
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .form-container {
+    width: 100%;
+    padding: 20px;
+  }
+}
 @media (max-width: 768px) {
   .form-container {
-    width: 90%;
+    width: 100%;
   }
 }
 

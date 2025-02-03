@@ -16,7 +16,12 @@ const HomePage = () => {
               Your literary journey starts here at this ShopBook. Discover, shop
               and get book delivered fast-all in one place.
             </p>
-            <button>Explore Now</button>
+            <button>
+              {" "}
+              <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                Explore Now
+              </a>
+            </button>
           </div>
         </header>
 
