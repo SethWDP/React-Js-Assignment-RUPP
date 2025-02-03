@@ -174,10 +174,8 @@ const Mainlayout = () => {
             <div className="tags">
               <a href="/">Home</a>
               <a href="/about">About</a>
-
-              <a href="/category">Category</a>
-              <a href="/service">Service</a>
               <a href="/contact">Contact</a>
+              <a href="/Login&SignUp">Login&SignUp</a>
               <span>
                 <a href="" className="lnk-icon">
                   <FontAwesomeIcon className="fb-icon" icon={faFacebook} />
