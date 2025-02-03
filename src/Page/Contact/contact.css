@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact-page {
+  width: 100%;
+  background-color: #f5f5f5;
+  height: auto;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-top: 1%;
+}
+.form {
+  width: 100%;
+  height: 60vh;
+  background-color: blue;
+  display: flex;
+}
+.form .contact-form {
+  width: 50%;
+  height: 100%;
+  background-color: yellowgreen;
+}
+.form .map {
+  background-color: yellow;
+  width: 50%;
+  height: 100%;
+}

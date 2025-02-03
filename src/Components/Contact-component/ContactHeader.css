@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --txtcolor1: #040a44;
+  --txtcolor2: #83c7f1;
+  --clor1: #22577a;
+  --clor2: #38a3a5;
+  --clor3: #57cc99;
+  --clor4: #80ed99;
+  --clor5: #c7f9cc;
+}
+.header-contact {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-image: url("https://littlefreelibrary.org/wp-content/uploads/2022/07/book-spines-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0405108d; /* Adjust opacity to control darkness */
+  z-index: 1; /* Ensures the overlay is above the background */
+}
+.header-contact h1 {
+  color: whitesmoke;
+  font-size: 5rem;
+  position: relative;
+  z-index: 2; /* Ensures the text is above the overlay */
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
