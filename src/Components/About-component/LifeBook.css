@@ -20,6 +20,8 @@ img {
   height: 50%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .read .read-img {
   width: 50%;
@@ -73,4 +75,52 @@ img {
   font-family: serif;
   width: 90%;
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .read .read-img,
+  .book-life .seed .seed-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .read .read-txt,
+  .book-life .seed .seed-txt {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .book-life .seed .seed-txt p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-life {
+    padding: 20px;
+  }
+
+  .read .read-txt h2,
+  .book-life .seed .seed-txt h2 {
+    font-size: 2rem;
+  }
+
+  .read .read-txt p,
+  .book-life .seed .seed-txt p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .read .read-txt h2,
+  .book-life .seed .seed-txt h2 {
+    font-size: 1.8rem;
+  }
+
+  .read .read-txt p,
+  .book-life .seed .seed-txt p {
+    font-size: 1rem;
+  }
 }

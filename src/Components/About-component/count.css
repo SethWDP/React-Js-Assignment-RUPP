@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --txtcolor1: #040a44;
+  --txtcolor2: #83c7f1;
+  --clor1: #22577a;
+  --clor2: #38a3a5;
+  --clor3: #57cc99;
+  --clor4: #80ed99;
+  --clor5: #c7f9cc;
+}
+.count {
+  width: 100%;
+  height: auto;
+  background-color: var(--clor1);
+}
+.countitem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  place-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.countitem :where(.customer, .book-sold, .allBook, .reader, h2) {
+  width: 250px;
+  height: auto;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.countitem p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .countitem {
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}

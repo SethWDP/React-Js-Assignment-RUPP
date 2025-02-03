@@ -12,6 +12,7 @@
   --clor4: #80ed99;
   --clor5: #c7f9cc;
 }
+
 .navbar {
   position: sticky;
   z-index: 3;
@@ -99,7 +100,7 @@
 }
 
 .footer-section a:hover {
-  color: #22577a;
+  color: var(--clor3);
 }
 .footer-section a .fb-icon:hover {
   color: #0856ff;

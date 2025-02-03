@@ -16,12 +16,12 @@ import logo from "../../assets/booklogo.png";
 const Mainlayout = () => {
   return (
     <>
-      {/* Header section */} 
+      {/* Header section */}
       <header className="navbar navbar-expand-lg position-sticky bg-white z-3">
         <nav className="container ">
-          <Link to="/" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             <img src={logo} alt="logo-img" />
-          </Link>
+          </a>
 
           {/* Toggle button for mobile */}
           <button
@@ -98,13 +98,13 @@ const Mainlayout = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/service">
-                  Service
+                <Link className="nav-link" to="/contact">
+                  Contact
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
+                <Link className="nav-link" to="/Login&SignUp">
+                  Login/Register
                 </Link>
               </li>
             </ul>
@@ -134,9 +134,9 @@ const Mainlayout = () => {
           <div className="footer-section">
             {/* <h4>Colorlib</h4> */}
             <div class="logo">
-              <Link to="/" className="navbar-brand">
+              <a href="/" className="navbar-brand">
                 <img src={logo} alt="logo-img" />
-              </Link>
+              </a>
             </div>
 
             <p>Get All The Books You Need!</p>
