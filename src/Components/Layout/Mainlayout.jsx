@@ -12,10 +12,12 @@ import "../../Style/Mainlayout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import logo from "../../assets/booklogo.png";
+import ScrollUp from "../ScrollUp";
 
 const Mainlayout = () => {
   return (
     <>
+      <ScrollUp />
       {/* Header section */}
       <header className="navbar navbar-expand-lg position-sticky bg-white z-3">
         <nav className="container ">
@@ -103,13 +105,13 @@ const Mainlayout = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/Login&SignUp">
-                  Login/Register
+                <Link className="nav-link" to="/Login">
+                  Login
                 </Link>
               </li>
             </ul>
             {/* Cart icon */}
-            <div className="cart-icon">
+            <div className="cart-icon" onClick={() => alert("Cart is empty!")}>
               <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

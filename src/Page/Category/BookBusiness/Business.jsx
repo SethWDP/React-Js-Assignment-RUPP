@@ -1,5 +1,8 @@
 import React from "react";
 import "../../../Style/Category.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import BusinessCard from "./BusinessCard";
 import b1 from "../../../assets/b1.jpg";
 import b2 from "../../../assets/b2.jpg";
@@ -71,22 +74,28 @@ const books = [
 ];
 
 const BookBusinessid = () => {
-  const addToCart = (title) => {
-    alert(`${title} has been added to the cart!`);
+  const addToCart = (book) => {
+    alert(`${book.title} has been added to the cart!`);
   };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation happens only once
+    });
+  }, []);
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up">
       <h1>Business / ជំនួញនិងទុរកិច្ច</h1>
       <div className="list_Book">
-        {books.map((book) => {
-          const { id, title, price, img } = book;
-          return (
-            <div key={id}>
-              <BusinessCard img={img} title={title} price={price} />
-            </div>
-          );
-        })}
+        {books.map((book) => (
+          <BusinessCard
+            key={book.id}
+            img={book.img}
+            title={book.title}
+            price={book.price}
+            addToCart={() => addToCart(book)} // Passing function as prop
+          />
+        ))}
       </div>
     </div>
   );

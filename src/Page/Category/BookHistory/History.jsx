@@ -1,7 +1,9 @@
 import React from "react";
 import HistoryCard from "./HistoryCard";
 import "../../../Style/Category.css";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import h1 from "../../../assets/n1.jpg";
 import h2 from "../../../assets/h2.jpg";
 import h3 from "../../../assets/h3.jpg";
@@ -101,6 +103,12 @@ const History = () => {
       price: "32,000.00៛",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation happens only once
+    });
+  }, []);
   return (
     // <div className="container">
     //   <h1>Book Collection/ប្រវត្តិសាស្រ្ត</h1>
@@ -115,19 +123,19 @@ const History = () => {
     //     })}
     //   </div>
     // </div>
-     <div className="container">
-     <h1>Book Collection / ប្រវត្តិសាស្រ្ត</h1>
-     <div className="list_Book">
-       {books.map((book) => {
-         const { id, img, title, price } = book;
-         return (
-           <div key={id}>
-             <HistoryCard img={img} title={title} price={price} />
-           </div>
-         );
-       })}
-     </div>
-   </div>
+    <div className="container" data-aos="fade-up">
+      <h1>Book Collection / ប្រវត្តិសាស្រ្ត</h1>
+      <div className="list_Book">
+        {books.map((book) => {
+          const { id, img, title, price } = book;
+          return (
+            <div key={id}>
+              <HistoryCard img={img} title={title} price={price} />
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

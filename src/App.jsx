@@ -4,7 +4,7 @@ import HomePage from "./Page/Home/HomePage";
 import AboutPage from "./Page/About/AboutPage";
 import BookMenuPage from "./Page/Category/BookMenupage";
 import ContactPage from "./Page/Contact/ContactPage";
-import Login from "./Page/Login/LoginPage";
+import SignUpPage from "./Page/Signup/SignUpPage";
 import Mainlayout from "./Components/Layout/Mainlayout";
 import BookLanCard from "./Page/Category/BookPsychology/Psychology";
 import History from "./Page/Category/BookHistory/History";
@@ -29,7 +29,8 @@ function App() {
           <Route path="/ប្រវត្តិសាស្រ្ត" element={<History />} />
           <Route path="/ប្រលោមលោក" element={<Novel />} />
           <Route path="/ចិត្តវិទ្យា" element={<BookLanCard />} />
-          <Route path="/Login&SignUp" element={<LoginPage />} />
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/SignUp" element={<SignUpPage />}></Route>
           <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>

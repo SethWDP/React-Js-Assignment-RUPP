@@ -5,12 +5,21 @@ import BestsellerCard from "../Category/BestsellerCard";
 import gbook from "../../assets/Gbooks.png";
 import ServiceFeatures from "../../Components/Home-component/ServiceFeatures";
 import PeopleSayCard from "../../Components/Home-component/PeopleSayCard";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation happens only once
+    });
+  }, []);
   return (
     <>
       <section className="home">
         <header className="header">
-          <div className=" txt-header">
+          <div className=" txt-header" data-aos="fade-down">
             <h1>Get All The Books You Need!</h1>
             <p>
               Your literary journey starts here at this ShopBook. Discover, shop
@@ -40,10 +49,13 @@ const HomePage = () => {
 
         <section className="container adv-book">
           <div className="row d-flex flex-wrap align-items-center">
-            <div className="col-md-6 adv-imgbook text-center">
+            <div
+              className="col-md-6 adv-imgbook text-center"
+              data-aos="fade-right"
+            >
               <img src={gbook} alt="book" />
             </div>
-            <div className="col-md-6 txt-book">
+            <div className="col-md-6 txt-book" data-aos="fade-left">
               <h2 className="fw-bold">Advantage of Reading Book</h2>
               <p className="mt-4">
                 Reading books enriches the mind, boosts creativity, and enhances
