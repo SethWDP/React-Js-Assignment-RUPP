@@ -73,10 +73,14 @@ const RegisterPage = () => {
             required
             className="form-control mb-4"
           />
-          <button className="btn btn-warning text-white rounded mt-3">Create Account</button>
+          <button className="btn btn-info text-white rounded mt-3">
+            Create Account
+          </button>
           <p className="text-center mt-3 text-secondary">
             Already have an account?
-            <Link className="ms-2 text-warning" to="/login">Login</Link>
+            <Link className="ms-2 text-dark" to="/login">
+              Login
+            </Link>
           </p>
         </form>
       </div>

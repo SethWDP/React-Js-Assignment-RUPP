@@ -14,6 +14,7 @@ import Philosophy from "./Page/Category/BookPhilosophy/Philosophy";
 import Programming from "./Page/Category/BookProgramming/Programming";
 import Novel from "./Page/Category/BookNovel/Novel";
 import LoginPage from "./Page/Login/LoginPage";
+import ForgotPassword from "./Page/ForgotPassword/Forgotpassword";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/ចិត្តវិទ្យា" element={<BookLanCard />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/SignUp" element={<SignUpPage />}></Route>
+          <Route path="/Fogot-Password" element={<ForgotPassword />}></Route>
           <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>

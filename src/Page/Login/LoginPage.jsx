@@ -43,11 +43,20 @@ const LoginPage = () => {
             required
             className="form-control mb-2"
           />
-          <Link className="d-flex justify-content-end text-warning" to="/forgetpassword">Forgot Password?</Link>
-          <button className="btn btn-warning text-white rounded mt-3">Login</button>
+          <Link
+            className="d-flex justify-content-end text-dark"
+            to="/Fogot-Password"
+          >
+            Forgot Password?
+          </Link>
+          <button className="btn btn-info text-white rounded mt-3">
+            Login
+          </button>
           <p className="text-center mt-3 text-secondary">
             Don't have an account?
-            <Link className="ms-2 text-warning" to="/signup">Create account</Link>
+            <Link className="ms-2 text-dark" to="/signup">
+              Create account
+            </Link>
           </p>
         </form>
       </div>
