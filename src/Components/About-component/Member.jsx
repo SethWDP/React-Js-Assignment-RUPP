@@ -1,9 +1,9 @@
 import React from "react";
 import "./Member.css";
-import sna from "../../assets/sna.jpg";
+import sna from "../../assets/sna1.jpg";
 import seth from "../../assets/seth.jpg";
 import huy from "../../assets/huy.jpg";
-import vuth from "../../assets/vuth.jpg";
+import vuth from "../../assets/vuth1.jpg";
 import potthea from "../../assets/puthea1.jpg";
 import MemberCard from "./MemberCard";
 const Member = () => {
